@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: tonytech/student_registry_app
+    ports:
+      - "8083:8080" # Map port 3030 on the host to port 3030 in the container
+    environment:
+      - NODE_ENV=production
